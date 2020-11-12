@@ -11,7 +11,7 @@ const makeParentFolder = (parentFolderName) => {
   return new Promise((resolve, reject) => {
     fs.mkdir(path.resolve(process.cwd(), `./${parentFolderName}`), (err) => {
       if (err) {
-        console.log("Process exited -> \n", err);
+        console.log("Process exited 1-> \n", err);
         reject();
       } else {
         console.log("Created parent folder.");
